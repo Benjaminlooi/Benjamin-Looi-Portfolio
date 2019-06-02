@@ -1,0 +1,13 @@
+<div class="container-12">
+  <h1 class="main-hero"><span (mouseenter)="mouseHovering()" (mouseleave)="mouseLeaving()">Benjamin<br>Looi</span></h1>
+  <h3 class="main-caption">Student at <strong>Uniten</strong></h3>
+  <p class="main-description">Son of Odin & Jesus</p>
+</div>
+
+<div class="main-image-wrapper">
+  <img class="chinese-caligraphy-brush" src="assets/caligraphy-brush.png" alt="">
+  <img class="chinese-caligraphy" src="assets/ben_mandarin_name.png" alt="">
+  <img class="main-image" src="assets/horses_painting.png" alt="">
+</div>
+
+<img *ngIf="isHovering" [@slideInOut] class="this-is-ben" src="assets/this-is-ben.png" alt="">

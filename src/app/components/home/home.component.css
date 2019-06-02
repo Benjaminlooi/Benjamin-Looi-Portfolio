@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap');
+
+.container-12{
+  max-width: 1200px;
+  margin: 100px auto 0px;
+}
+
+.main-hero {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: 1px;
+  line-height: 100px;
+  margin-bottom: 16px;
+}
+
+.main-caption {
+  font-size: 32px;
+  letter-spacing: -0.6px;
+  font-weight: 700;
+  color: #adadad;
+}
+
+.main-caption strong {
+  font-weight: 700;
+  color: #6f6f6f; 
+}
+
+.main-description {
+  width: 480px;
+  opacity: 0.5;
+  font-size: 19px;
+  line-height: 36px;
+  margin: 16px 0px 32px;
+  letter-spacing: 0px;
+}
+
+.main-image-wrapper{
+  position: relative;
+  padding-left: calc( (100vw - 1200px) / 2 );
+}
+
+.main-image{
+  width: 100%;
+}
+
+.chinese-caligraphy-brush{
+  position: absolute;
+  top: -395px;
+  left: calc( (100vw - 1200px) / 2 + 716px);
+  transform: rotate(20deg);
+}
+
+.chinese-caligraphy{
+  position: absolute;
+  top: -238px;
+  right: calc((100vw - 1200px) / 2);
+}
+
+.this-is-ben {
+  height: 80vh;
+  bottom: 0vh;
+  position: sticky;
+  float: right;
+  z-index: 9999;
+}
