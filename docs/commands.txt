@@ -1,2 +1,2 @@
-ng build --base-href "https://benjaminlooi.github.io/benjaminlooiGHP/"
+ng build --base-href "https://benjaminlooi.github.io/"
 ngh --dir=dist/benjaminlooiGHP
