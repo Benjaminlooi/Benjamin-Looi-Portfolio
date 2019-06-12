@@ -1,2 +1,3 @@
 ng build --base-href "https://benjaminlooi.github.io/"
 ngh --dir=dist/benjaminlooiGHP
+
