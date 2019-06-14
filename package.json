@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "buildpublish": "ng build --aot --prod --base-href \"https://benjaminlooi.github.io/\" && npx ngh --repo=https://GH_TOKEN@github.com/benjaminlooi/benjaminlooi.github.io --branch=master --dir=dist/benjaminlooiGHP"
   },
   "private": true,
   "dependencies": {
