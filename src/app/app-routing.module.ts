@@ -6,7 +6,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: 'projects', pathMatch: 'full', component: ProjectsComponent },
+  { path: 'projects', component: ProjectsComponent },
   { path: '', pathMatch: 'full', component: HomeComponent },
   { path: '**', component: NotFoundComponent}
 ];
