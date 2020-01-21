@@ -7,13 +7,13 @@
 
             <ng-container *ngIf="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc; else projectNoImage">
               <mdb-card-img [src]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc" [alt]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageAlt"></mdb-card-img>
-              <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc">
+              <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectLink">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </ng-container>
             <ng-template #projectNoImage>
               <mdb-card-img src="assets/1498x1080.jpg" alt="image cap"></mdb-card-img>
-              <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc">
+              <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectLink">
                 <div class="mask rgba-white-slight"></div>
               </a>
             </ng-template>
@@ -27,7 +27,7 @@
               <span [innerHTML]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectDesc"></span>
             </mdb-card-text>
 
-            <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc" mdbBtn color="primary" mdbWavesEffect>Link</a>
+            <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectLink" mdbBtn color="primary" mdbWavesEffect>Link</a>
           </mdb-card-body>
         </mdb-card>
       </ng-container>
