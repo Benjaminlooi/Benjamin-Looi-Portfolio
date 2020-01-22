@@ -69,6 +69,20 @@ export const projectsData = [
     projectTitle: 'The story of ray',
     projectDesc: 'System Administration Class Assignment<br>HTML'
   },
+  {
+    imageSrc: null,
+    imageAlt: null,
+    projectLink: 'https://steamedbum.netlify.com/',
+    projectTitle: 'SteamedBum',
+    projectDesc: 'my VueJs playground'
+  },
+  {
+    imageSrc: null,
+    imageAlt: null,
+    projectLink: 'https://steamedbanana.netlify.com/',
+    projectTitle: 'SteamedBanana',
+    projectDesc: 'my Angular playground'
+  },
   // {
   //   imageSrc: 'vvvvvvvvvvv',
   //   imageAlt: 'vvvvvvvvvvv',
