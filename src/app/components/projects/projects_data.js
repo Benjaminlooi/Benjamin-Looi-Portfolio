@@ -11,21 +11,21 @@ export const projectsData = [
     imageAlt: 'SEO Quiz image cap',
     projectLink: 'https://seopressor.com/seo-quiz',
     projectTitle: 'SEO Quiz',
-    projectDesc: 'Jquery'
+    projectDesc: 'HTML+CSS+PHP+JS w/ Jquery'
   },
   {
     imageSrc: 'assets/nyheadline_cropped.jpg',
     imageAlt: 'nyheadline image cap',
     projectLink: 'https://nyheadline.com',
     projectTitle: 'NYheadline',
-    projectDesc: 'Built with Angular + Firebase'
+    projectDesc: 'Built with Angular w/ MDBootstrap & Firebase'
   },
   {
     imageSrc: 'assets/utn.jpg',
     imageAlt: 'Threadify ng image cap',
     projectLink: 'https://utn.netlify.com',
     projectTitle: 'Utn',
-    projectDesc: 'Frontend: Angular<br>Backend: Half with PHP, and another half with Nodejs Express'
+    projectDesc: 'Frontend: Angular<br>Backend: Half with PHP, and another half with Nodejs + Express'
   },
   {
     imageSrc: null,
@@ -46,7 +46,7 @@ export const projectsData = [
     imageAlt: 'Pet Registration System image cap',
     projectLink: 'http://bensanity.epizy.com/prs',
     projectTitle: 'Pet Registration System',
-    projectDesc: 'Web Prog. Class Assignment<br>PHP + MySQL'
+    projectDesc: 'Web Prog. Class Assignment<br>HTML+CSS+PHP+MySQL w/ Bootstrap'
   },
   {
     imageSrc: null,
@@ -67,7 +67,7 @@ export const projectsData = [
     imageAlt: 'The story of ray image cap',
     projectLink: 'https://benjaminlooi.github.io/the-journey-of-ray-ori/',
     projectTitle: 'The story of ray',
-    projectDesc: 'System Administration Class Assignment<br>HTML'
+    projectDesc: 'System Administration Class Assignment<br>HTML+CSS w/ Bootstrap'
   },
   {
     imageSrc: null,
