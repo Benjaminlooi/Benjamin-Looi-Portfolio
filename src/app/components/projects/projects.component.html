@@ -4,19 +4,10 @@
       <ng-container *ngFor="let card of [1,2,3]; let cardIndex = index;">
         <mdb-card *ngIf="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)]">
           <div class="view overlay waves-light" mdbWavesEffect>
-
-            <ng-container *ngIf="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc; else projectNoImage">
-              <mdb-card-img [src]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc" [alt]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageAlt"></mdb-card-img>
-              <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectLink">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </ng-container>
-            <ng-template #projectNoImage>
-              <mdb-card-img src="assets/1498x1080.jpg" alt="image cap"></mdb-card-img>
-              <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectLink">
-                <div class="mask rgba-white-slight"></div>
-              </a>
-            </ng-template>
+            <mdb-card-img [src]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc ? projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageSrc : 'assets/1498x1080.jpg'" [alt]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageAlt ? projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].imageAlt : 'image cap'"></mdb-card-img>
+            <a [href]="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)].projectLink">
+              <div class="mask rgba-white-slight"></div>
+            </a>
           </div>
           <mdb-card-body>
             <mdb-card-title>
