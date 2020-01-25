@@ -1,6 +1,6 @@
 <div *ngIf="projectData.length" class="container">
   <ng-container *ngFor="let project_deck of numbers; let deckIndex = index">
-    <div [ngClass]="{'mt-5': deckIndex > 0, 'card-deck': true}">
+    <div [ngClass]="{'mb-4': true, 'card-deck': true}">
       <ng-container *ngFor="let card of [1,2,3]; let cardIndex = index;">
         <mdb-card *ngIf="projectData[((deckIndex * 3) + (cardIndex + 1) - 1)]">
           <div class="view overlay waves-light" mdbWavesEffect>
