@@ -1,0 +1,38 @@
+.container {
+  // max-height: 100vh;
+  // height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & svg {
+    height: 85vh;
+
+    #ghost {
+      animation: float 3s linear infinite alternate;
+      transform-origin: center;
+    }
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(-100px) rotate(5deg);
+  }
+
+  25% {
+    transform: translateY(-75px) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateY(-50px) rotate(5deg);
+  }
+
+  75% {
+    transform: translateY(-25px) rotate(-5deg);
+  }
+
+  100% {
+    transform: translateY(0) rotate(5deg);
+  }
+}
