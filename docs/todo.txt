@@ -1,2 +1,3 @@
 -for loop in projects page project===
 
+-gsap animation for hamburger icon
