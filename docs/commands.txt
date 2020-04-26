@@ -4,3 +4,5 @@ ngh --dir=dist/benjaminlooiGHP
 ng build --aot --prod --base-href "https://benjaminlooi.github.io/"
 
 npx ngh --repo=https://GH_TOKEN@github.com/benjaminlooi/benjaminlooi.github.io --branch=master --dir=dist/benjaminlooiGHP
+
+npx ngh --repo=https://b71940d49cef1224a34dd0c25b84196d8ba10923@github.com/benjaminlooi/benjaminlooi.github.io --branch=master --dir=dist/benjaminlooiGHP
