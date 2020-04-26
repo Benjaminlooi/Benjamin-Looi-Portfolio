@@ -25,6 +25,11 @@
                 "glob": "robots.txt",
                 "input": "src/assets",
                 "output": "/"
+              },
+              {
+                "glob": "sitemap.xml",
+                "input": "src/assets",
+                "output": "/"
               }
             ],
             "styles": [
