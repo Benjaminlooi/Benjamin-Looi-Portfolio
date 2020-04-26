@@ -7,10 +7,36 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
 import { ResumeComponent } from './views/resume/resume.component';
 
 const routes: Routes = [
-  { path: 'resume', component: ResumeComponent, data: { animation: 'resume' } },
-  { path: 'projects', component: ProjectsComponent, data: { animation: 'projects' } },
-  { path: '', pathMatch: 'full', component: HomeComponent, data: { animation: 'home' } },
-  { path: '**', component: NotFoundComponent }
+  {
+    path: 'resume',
+    component: ResumeComponent,
+    data: {
+      animation: 'resume',
+      title: 'Resume - Benjamin Looi'
+    }
+  },
+  {
+    path: 'projects',
+    component: ProjectsComponent,
+    data: {
+      animation: 'projects',
+      title: 'Projects - Benjamin Looi'
+    }
+  },
+  {
+    path: '',
+    pathMatch: 'full',
+    component: HomeComponent,
+    data: {
+      animation: 'home',
+      title: 'Benjamin Looi Portfolio'
+    }
+  },
+  {
+    path: '**', component: NotFoundComponent, data: {
+      title: '404 - Benjamin Looi'
+    }
+  }
 ];
 
 @NgModule({
