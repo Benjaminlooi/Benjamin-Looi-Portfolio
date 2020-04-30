@@ -12,7 +12,7 @@ const routes: Routes = [
     component: ResumeComponent,
     data: {
       animation: 'resume',
-      title: 'Resume - Benjamin Looi'
+      title: 'Resume - Benjamin Looi GHP'
     }
   },
   {
@@ -20,7 +20,7 @@ const routes: Routes = [
     component: ProjectsComponent,
     data: {
       animation: 'projects',
-      title: 'Projects - Benjamin Looi'
+      title: 'Projects - Benjamin Looi GHP'
     }
   },
   {
@@ -29,12 +29,12 @@ const routes: Routes = [
     component: HomeComponent,
     data: {
       animation: 'home',
-      title: 'Benjamin Looi Portfolio'
+      title: 'Benjamin Looi Portfolio GHP'
     }
   },
   {
     path: '**', component: NotFoundComponent, data: {
-      title: '404 - Benjamin Looi'
+      title: '404 - Benjamin Looi GHP'
     }
   }
 ];
