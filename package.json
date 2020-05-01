@@ -12,7 +12,10 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng build --prod && ng run benjaminlooiGHP:server:production --bundleDependencies all"
+    "build:client-and-server-bundles": "ng build --prod && ng run benjaminlooiGHP:server:production --bundleDependencies all",
+    "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
+    "generate:prerender": "cd dist && node prerender",
+    "serve:prerender": "cd dist/browser && http-server"
   },
   "private": true,
   "dependencies": {
@@ -36,6 +39,7 @@
     "core-js": "^2.6.11",
     "express": "^4.15.2",
     "hammerjs": "^2.0.8",
+    "http-server": "^0.12.3",
     "rxjs": "^6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
