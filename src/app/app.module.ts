@@ -22,7 +22,7 @@ import { ResumeComponent } from './views/resume/resume.component';
     ResumeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     NgbModule,
     BrowserAnimationsModule,
