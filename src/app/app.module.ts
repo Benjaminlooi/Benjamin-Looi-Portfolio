@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { ResumeComponent } from './views/resume/resume.component';
+import { CardComponent } from './views/card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ResumeComponent } from './views/resume/resume.component';
     NavbarComponent,
     ProjectsComponent,
     NotFoundComponent,
-    ResumeComponent
+    ResumeComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,
